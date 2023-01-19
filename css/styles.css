@@ -1,0 +1,194 @@
+/* variables color*/
+:root {
+  --primary-color: #4d5ae5;
+  --secondary-color: #404bbf;
+  --primary-dark-color: #2e2f42;
+  --accent-light-color: #e7e9fc;
+  --text-dark-color: #434455;
+  --text-light-color: #f4f4fd;
+  --hero-title-color: #ffffff;
+}
+
+/* style reset */
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* hidden */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* common section styles */
+
+/* section header */
+/* logo */
+.logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo--dark {
+  color: var(--primary-dark-color);
+}
+
+.logo--accent {
+  color: var(--primary-color);
+}
+
+.logo--light {
+  color: var(--text-light-color);
+}
+
+/* navigation header*/
+
+.nav__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--primary-dark-color);
+}
+
+/* contact header */
+.header-contact__link {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--text-dark-color);
+}
+
+/* section hero */
+.hero {
+  background-color: var(--primary-dark-color);
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  text-align: center;
+
+  color: var(--hero-title-color);
+}
+
+/* section features */
+.features__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: var(--primary-dark-color);
+}
+
+.features__description {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--text-dark-color);
+}
+
+/* section product */
+.product__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+
+  color: var(--primary-dark-color);
+
+  text-align: center;
+}
+
+/* section team */
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+
+  color: var(--primary-dark-color);
+
+  text-align: center;
+}
+
+.team__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: var(--primary-dark-color);
+}
+
+.team__position {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--text-dark-color);
+}
+
+/* all button */
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: var(--hero-title-color);
+  background-color: var(--primary-color);
+  border: 0 solid transparent;
+
+  cursor: pointer;
+}
+
+/* section footer */
+.footer {
+  background-color: var(--primary-dark-color);
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accent-light-color);
+}
