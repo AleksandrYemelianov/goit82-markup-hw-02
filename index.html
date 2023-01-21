@@ -25,14 +25,15 @@
   </head>
   <body>
     <!-- top line -->
-    <header class="section">
-      <a class="logo logo--dark" href="./index.html">
+    <header class="top-line">
+      <div class="container header">
+        <a class="logo logo--dark" href="./index.html">
         <span class="logo--accent">Web</span>Studio
       </a>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="./index.html">Studio</a>
+            <a class="nav__link nav__link--current" href="./index.html">Studio</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="./portfolio.html">Portfolio</a>
@@ -54,134 +55,145 @@
           >
         </li>
       </ul>
+      </div>
     </header>
     <main>
       <!-- hero -->
       <section class="hero">
-        <h1 class="hero__title">Effective Solutions </br> for Your Business</h1>
-        <button type="button" class="button">Order Service</button>
+        <div class="container">
+          <h1 class="hero__title">Effective Solutions </br> for Your Business</h1>
+          <button type="button" class="button button--accent">Order Service</button>
+        </div>
       </section>
 
       <!-- our features -->
-      <section>
-        <h2 class="visually-hidden">features</h2>
-        <ul class="features">
-          <li>
-            <h3 class="features__title">Strategy</h3>
-            <p class="features__description">
+      <section class="section">
+        <div class="container">
+          <h2 class="visually-hidden">features</h2>
+        <ul class="feature__list">
+          <li class="feature__item">
+            <h3 class="feature__title">Strategy</h3>
+            <p class="feature__description">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
-            <h3 class="features__title">Punctuality</h3>
-            <p class="features__description">
+          <li class="feature__item">
+            <h3 class="feature__title">Punctuality</h3>
+            <p class="feature__description">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
-            <h3 class="features__title">Diligence</h3>
-            <p class="features__description">
+          <li class="feature__item">
+            <h3 class="feature__title">Diligence</h3>
+            <p class="feature__description">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
-            <h3 class="features__title">Technologies</h3>
-            <p class="features__description">
+          <li class="feature__item">
+            <h3 class="feature__title">Technologies</h3>
+            <p class="feature__description">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- what are we doing -->
-      <section>
-        <h2 class="product__title">What are we doing</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/product/product-1.jpg"
-              alt="design website for desktop"
-              width="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/product/product-2.jpg"
-              alt="design mobile application"
-              width="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/product/product-3.jpg"
-              alt="design website for smartphone"
-              width="360"
-            />
-          </li>
-        </ul>
+      <section class="section product">
+        <div class="container">
+          <h2 class="product__title">What are we doing</h2>
+          <ul class="product__list">
+            <li class="product__item">
+              <img
+                src="./images/product/product-1.jpg"
+                alt="design website for desktop"
+                width="360"
+              />
+            </li>
+            <li class="product__item">
+              <img
+                src="./images/product/product-2.jpg"
+                alt="design mobile application"
+                width="360"
+              />
+            </li>
+            <li class="product__item">
+              <img
+                src="./images/product/product-3.jpg"
+                alt="design website for smartphone"
+                width="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- our team -->
-      <section>
-        <h2 class="team__title">Our Team</h2>
-        <ul class="team__list">
-          <li class="team__item">
-            <img
-              src="./images/team/expert-1.jpg"
-              alt="expert mark"
-              width="270"
-            />
-            <h3 class="team__name">Mark Guerrero</h3>
-            <p class="team__position">Product Designer</p>
-            <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
-          </li>
-          <li class="team__item">
-            <img
-              src="./images/team/expert-2.jpg"
-              alt="expert tom"
-              width="270"
-            />
-            <h3 class="team__name">Tom Ford</h3>
-            <p class="team__position">Frontend Developer</p>
-            <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
-          </li>
-          <li class="team__item">
-            <img
-              src="./images/team/expert-3.jpg"
-              alt="expert camila"
-              width="270"
-            />
-            <h3 class="team__name">Camila Garcia</h3>
-            <p class="team__position">Marketing</p>
-            <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
-          </li>
-          <li class="team__item">
-            <img
-              src="./images/team/expert-4.jpg"
-              alt="expert daniel"
-              width="270"
-            />
-            <h3 class="team__name">Daniel Wilson</h3>
-            <p class="team__position">UI Designer</p>
-            <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
-          </li>
-        </ul>
+      <section class="section team">
+        <div class="container">
+          <h2 class="team__title">Our Team</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <img
+                src="./images/team/expert-1.jpg"
+                alt="expert mark"
+                width="270" class="team__photo"
+              />
+              <h3 class="team__name">Mark Guerrero</h3>
+              <p class="team__position">Product Designer</p>
+              <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+            </li>
+            <li class="team__item">
+              <img
+                src="./images/team/expert-2.jpg"
+                alt="expert tom"
+                width="270" class="team__photo"
+              />
+              <h3 class="team__name">Tom Ford</h3>
+              <p class="team__position">Frontend Developer</p>
+              <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+            </li>
+            <li class="team__item">
+              <img
+                src="./images/team/expert-3.jpg"
+                alt="expert camila"
+                width="270" class="team__photo"
+              />
+              <h3 class="team__name">Camila Garcia</h3>
+              <p class="team__position">Marketing</p>
+              <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+            </li>
+            <li class="team__item">
+              <img
+                src="./images/team/expert-4.jpg"
+                alt="expert daniel"
+                width="270" class="team__photo"
+              />
+              <h3 class="team__name">Daniel Wilson</h3>
+              <p class="team__position">UI Designer</p>
+              <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- footer -->
     <footer class="footer">
-      <a class="logo logo--light" href="./index.html">
+      <div class="container ">
+        <a class="footer__link logo logo--light " href="./index.html">
         <span class="logo--accent">Web</span>Studio
-      </a>
-      <p class="footer__text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+        </a>
+        <p class="footer__text">
+          Increase the flow of customers and sales for your business with digital
+          marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
