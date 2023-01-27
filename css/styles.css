@@ -69,6 +69,18 @@ body {
   margin-right: auto;
 }
 
+.title {
+  margin-bottom: 72px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+
+  color: var(--primary-dark-color);
+
+  text-align: center;
+}
 /* ---common page web studio------------------------------------ */
 /* section header */
 .top-line {
@@ -164,16 +176,29 @@ body {
 /* -----main----- */
 /* section hero */
 .hero {
-  padding-top: 190px;
-  padding-bottom: 190px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
 
   background-color: var(--primary-dark-color);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero__title {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 
   font-weight: 700;
   font-size: 56px;
@@ -191,6 +216,24 @@ body {
 
 .feature__item:not(:first-child) {
   margin-left: 24px;
+}
+
+.feature__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 112px;
+
+  background-color: var(--text-light-color);
+
+  margin-bottom: 8px;
+}
+
+.feature__icon {
+  /* display: block; */
+  width: 64px;
+  height: 64px;
 }
 
 .feature__title {
@@ -241,19 +284,6 @@ body {
   background-color: var(--text-light-color);
 }
 
-.team__title {
-  margin-bottom: 72px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-
-  color: var(--primary-dark-color);
-
-  text-align: center;
-}
-
 .team__list {
   display: flex;
 }
@@ -268,8 +298,9 @@ body {
   margin-left: 30px;
 }
 
-.team__photo {
-  margin-bottom: 32px;
+.team-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team__name {
@@ -293,6 +324,39 @@ body {
   text-align: center;
 
   color: var(--text-dark-color);
+}
+
+.team-social__list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social__item:not(:first-child) {
+  margin-left: 24px;
+}
+
+.team-social__link {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  color: var(--hero-title-color);
+  background-color: var(--primary-color);
+}
+
+.team-social__link:hover,
+.team-social__link:focus {
+  background-color: var(--secondary-color);
+}
+
+.team-social__icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 /* all button */
@@ -410,6 +474,10 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--primary-dark-color);
+}
+
+.footer-wrapper {
+  display: flex;
 }
 
 .footer__link {
