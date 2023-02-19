@@ -298,10 +298,6 @@ body {
     margin-left: 118px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .header-contact {
-  }
-}
 @media screen and (max-width: 767px) {
   .header-contact {
     flex-direction: column-reverse;
